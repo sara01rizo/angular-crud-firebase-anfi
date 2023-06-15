@@ -7,10 +7,16 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { FormsModule } from '@angular/forms';
+import { AddTaskComponent } from './components/add-task/add-task.component';
+import { TaskDetailsComponent } from './components/task-details/task-details.component';
+import { TaskListComponent } from './components/task-list/task-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AddTaskComponent,
+    TaskDetailsComponent,
+    TaskListComponent
   ],
   imports: [
     BrowserModule,
