@@ -1,6 +1,6 @@
 import { Component, Injectable } from '@angular/core';
 import { Task } from 'src/app/models/task.model';
-import { TaskService } from 'src/app/services/anfi.service';
+import { AnfiService } from 'src/app/services/anfi.service';
 
 @Component({
   selector: 'app-add-task',
@@ -16,10 +16,10 @@ export class AddTaskComponent {
   task: Task = new Task();
   submitted = false;
 
-  constructor(private taskService: TaskService) {}
+  constructor(private anfiService: AnfiService) {}
 
   saveTask(): void {
-    this.taskService.create(this.task).then(() => {
+    this.anfiService.create(this.task).then(() => {
       console.log('Create new task successfully!');
       this.submitted = true;
     });

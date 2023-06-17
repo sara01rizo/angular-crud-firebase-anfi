@@ -1,4 +1,4 @@
-<form *f="ngForm" (ngSubmit)="addData(f)">
+<form *ngFor="let ngForm" (ngSubmit)="addData(f)">
   <input type="text" name="name" ng ngModel>
   <br>
   <input type="email" name="email" ngModel>
@@ -7,6 +7,12 @@
   <br>
   <button type="submit">Save</button>
 </form>
+<br>
+<ul>
+  <li *ngFor="let data of userData |async">
+    {{ data.name }} / {{ data.email }}
+  </li>
+</ul>
 
 <!-- <form *ngIf="showAddTask" class="add-form" (ngSubimt)="onSubmit">
   <div class="form-control">
