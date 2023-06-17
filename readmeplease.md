@@ -1,7 +1,7 @@
-<h1 align="center"> GitPoint </h1> <br>
+<h1 align="center"> AnFi </h1> <br>
 <p align="center">
   <a href="https://github.com/sara01rizo">
-    <img alt="AnFi" title="Angular Firebase" src="http://i.imgur.com/VShxJHs.png" width="450">
+    <img alt="AnFi" title="Angular Firebase" src="https://github.com/sara01rizo/angular-crud-firebase-anfi/blob/master/src/images/anfi%20200%20-%20form%20angular%20firestore.png" width="850">
   </a>
 </p>
 
