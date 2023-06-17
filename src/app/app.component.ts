@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Firestore, collection, addDoc, collectionData } from '@angular/fire/firestore';
+import { Firestore, collection, addDoc, collectionData, doc, updateDoc, deleteDoc } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -27,12 +27,34 @@ export class AppComponent {
 
   getData () {
     const collectionInstance = collection(this.firestore, 'users');
-    collectionData(collectionInstance).subscribe(val => {
+    collectionData(collectionInstance, { idField: 'id'}).subscribe(val => {
       console.log(val);
+    });
+
+    this.userData = collectionData(collectionInstance, { idField: 'id'});
+  }
+
+  updateData(id: string) {
+    const docInstance = doc(this.firestore, 'users', id);
+    const updateData = {
+      name: 'updatedName'
+    }
+
+    updateDoc(docInstance, updateData)
+    .then(() => {
+      console.log('Data updated');
     })
+    .catch((err) => {
+      console.log(err);
+    })
+  }
 
-    this.userData = collectionData(collectionInstance);
-
+  deleteData(id: string) {
+    const docInstance = doc(this.firestore, 'users', id);
+    deleteDoc(docInstance)
+    .then(() => {
+      console.log('Data Deleted');
+    })
   }
 
 }

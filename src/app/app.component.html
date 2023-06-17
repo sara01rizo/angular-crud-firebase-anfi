@@ -1,18 +1,27 @@
-<form *ngFor="let ngForm" (ngSubmit)="addData(f)">
-  <input type="text" name="name" ng ngModel>
+<div class="container">
+  <form #f="ngForm" (ngSubmit)="addData(f)" class="form-cotrol-anfi">
+    <label for="text" class="form-control">Name </label>
+    <input type="text" name="name" ng ngModel class="form-control">
+    <br>
+    <label for="text" class="form-control">Email </label>
+    <input type="email" name="email" ngModel class="form-control">
+    <br>
+    <label for="password" class="form-control">Password </label>
+    <input type="password" name="password" ngModel class="form-control">
+    <br>
+    <button class="btn" type="submit">Save</button>
+  </form>
   <br>
-  <input type="email" name="email" ngModel>
-  <br>
-  <input type="password" name="password" ngModel>
-  <br>
-  <button type="submit">Save</button>
-</form>
-<br>
-<ul>
-  <li *ngFor="let data of userData |async">
-    {{ data.name }} / {{ data.email }}
-  </li>
-</ul>
+  <ul>
+    <div>🥨</div>
+    <li *ngFor="let data of userData |async">
+      {{ data.name }} / {{ data.email }}
+      <button class="btn" (click)="updateData(data.id)"> Edit </button>
+      <button class="btn" (click)="deleteData(data.id)" > Delete </button>
+    </li>
+  </ul>
+</div>
+
 
 <!-- <form *ngIf="showAddTask" class="add-form" (ngSubimt)="onSubmit">
   <div class="form-control">
