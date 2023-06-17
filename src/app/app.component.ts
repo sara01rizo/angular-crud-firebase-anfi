@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { FireStore, collection, addDoc } from '@angular/fire/firestore';
+import { Firestore, collection, addDoc, collectionData } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +9,11 @@ import { FireStore, collection, addDoc } from '@angular/fire/firestore';
 })
 export class AppComponent {
   title = 'angular-crud-firebase-anfi';
+  userData!: Observable<any>;
 
-  constructor(private firestore: Firestore) {}
+  constructor(private firestore: Firestore) {
+    this.getData();
+  }
 
   addData(f: any) {
     const collectionInstance = collection(this.firestore, 'users');
@@ -19,6 +23,16 @@ export class AppComponent {
     .catch((err) => {
       console.log(err);
     });
+  }
+
+  getData () {
+    const collectionInstance = collection(this.firestore, 'users');
+    collectionData(collectionInstance).subscribe(val => {
+      console.log(val);
+    })
+
+    this.userData = collectionData(collectionInstance);
+
   }
 
 }
