@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://github.com/sara01rizo">
-    <img alt="Linked in profile" title="Sara Pulido" src="http://i.imgur.com/0n2zqHD.png" width="140">
+    <img alt="Linked in profile" title="Sara Pulido" src="https://pic.onlinewebfonts.com/svg/img_411853.png" width="140">
   </a>
 
   <a href="https://github.com/sara01rizo">
@@ -38,7 +38,7 @@
 
 [![Build Status](https://img.shields.io/travis/gitpoint/git-point.svg?style=flat-square)](https://github.com/sara01rizo)
 [![Coveralls](https://img.shields.io/coveralls/github/gitpoint/git-point.svg?style=flat-square)](https://github.com/sara01rizo)
-[![All Contributors](https://img.shields.io/badge/all_contributors-73-orange.svg?style=flat-square)](./CONTRIBUTORS.md)
+[![All Contributors](https://img.shields.io/badge/all_contributors-01-orange.svg?style=flat-square)](./CONTRIBUTORS.md)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
 [![Gitter chat](https://img.shields.io/badge/chat-on_gitter-008080.svg?style=flat-square)](https://github.com/sara01rizo)
