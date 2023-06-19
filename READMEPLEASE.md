@@ -11,11 +11,7 @@
 
 <p align="center">
   <a href="https://github.com/sara01rizo">
-    <img alt="Linked in profile" title="Sara Pulido" src="https://pic.onlinewebfonts.com/svg/img_411853.png" width="140">
-  </a>
-
-  <a href="https://github.com/sara01rizo">
-    <img alt="Get in touch" title="Sara Pulido" src="http://i.imgur.com/mtGRPuM.png" width="140">
+    <img alt="Linked in profile" title="Sara Pulido" src="https://cdn.freebiesupply.com/logos/large/2x/angular-icon-1-logo-png-transparent.png" width="140">
   </a>
 </p>
 
@@ -28,8 +24,9 @@
 - [Feedback](#feedback)
 - [Contributors](#contributors)
 - [Build Process](#build-process)
-- [Backers](#backers-)
-- [Sponsors](#sponsors-)
+- [Backers](#backers)
+- [Feat](#feat)
+- [Sponsors](#sponsors)
 - [Acknowledgments](#acknowledgments)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -81,6 +78,15 @@ This project follows the [all-contributors](https://www.linkedin.com/in/sara-pul
 
 
 <a href="https://firebase.google.com/" target="_blank"><img src="https://firebase.google.com/images/homepage/solutions-illo_1x.png"></a>
+
+
+## Feat
+
+<p alig=center>
+  <a href="https://github.com/sara01rizo">
+    <img alt="feat" title="feat" src="http://i.imgur.com/mtGRPuM.png" width="140">
+  </a>
+</p>
 
 
 ## Acknowledgments
